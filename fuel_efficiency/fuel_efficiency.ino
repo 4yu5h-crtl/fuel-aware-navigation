@@ -3,8 +3,8 @@
 #include <ArduinoJson.h>
 
 // WiFi credentials
-const char* ssid = "JioFiber-5G";
-const char* password = "123456789";
+const char* ssid = "your-router-ssid";
+const char* password = "your-router-password";
 
 // Create WebServer instance on port 80
 WebServer server(80);
