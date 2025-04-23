@@ -1,40 +1,91 @@
-# Getting Started with Create React App
+# 🚗 Fuel-Aware Navigation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A smart navigation system that optimizes routes based on real-time fuel levels, helping you reach your destination efficiently while avoiding running out of fuel.
 
-## Available Scripts
+![Project Demo](yet to come)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- **Real-time Fuel Monitoring**: Integrates with ESP32 and fuel sensors to track fuel levels
+- **Smart Route Optimization**: Calculates routes based on current fuel levels and consumption rates
+- **Multiple Route Options**: Provides alternative routes based on fuel efficiency
+- **Automatic Location Detection**: Uses browser geolocation for quick start
+- **Refueling Alerts**: Notifies you when you need to refuel
+- **Interactive Map Interface**: Clean and intuitive Google Maps integration
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend**: React.js with Material-UI
+- **Maps**: Google Maps JavaScript API
+- **Hardware Integration**: ESP32 microcontroller
+- **Real-time Updates**: WebSocket communication
+- **Styling**: CSS Modules for component-specific styles
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v14 or higher)
+- npm or yarn
+- Google Maps API key
+- ESP32 microcontroller with fuel sensor
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/fuel-aware-navigation.git
+cd fuel-aware-navigation
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run eject`
+3. Create a `.env` file in the root directory and add your Google Maps API key:
+```
+REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Start the development server:
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🔧 Hardware Setup
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Connect the fuel sensor to your ESP32
+2. Upload the provided Arduino sketch to the ESP32
+3. Ensure the ESP32 is connected to the same network as your computer
+4. The application will automatically detect and connect to the ESP32
+
+## 📱 How to Use
+
+1. **Start Navigation**:
+   - Enter your destination in the search bar
+   - The system will automatically detect your current location
+   - View multiple route options based on fuel efficiency
+
+2. **Monitor Fuel Levels**:
+   - Real-time fuel level updates are displayed on the map
+   - Receive alerts when fuel levels are low
+   - View estimated range based on current fuel levels
+
+3. **Route Optimization**:
+   - Choose between fastest, most fuel-efficient, or balanced routes
+   - View estimated fuel consumption for each route
+   - Get real-time updates on fuel levels during navigation
+
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## 📞 Support
+
+For support, please open an issue in the GitHub repository or contact the development team.
