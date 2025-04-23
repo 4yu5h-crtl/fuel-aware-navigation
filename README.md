@@ -2,7 +2,7 @@
 
 A smart navigation system that optimizes routes based on real-time fuel levels, helping you reach your destination efficiently while avoiding running out of fuel.
 
-![Project Demo](yet to come)
+[Project Demo](yet to come)
 
 ## 🌟 Features
 
